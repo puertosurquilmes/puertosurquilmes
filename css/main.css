@@ -1,0 +1,63 @@
+:root {
+  --main-color: #25244e;
+  --secondary-color: #2b8a9c;
+  --ps-yellow: #f5f0dd; }
+
+#main {
+  background: var(--ps-yellow);
+  min-height: calc((var(--vh, 1vh) * 100) - 2.6rem);
+  margin: 1.2rem 1.05rem;
+  overflow: hidden;
+  position: relative; }
+  #main .gallery {
+    position: relative;
+    margin: 4rem auto 0;
+    width: 75vw;
+    max-width: 20rem; }
+    @media only screen and (min-width: 900px) {
+      #main .gallery {
+        margin-top: 6rem; } }
+    #main .gallery img {
+      display: block;
+      width: 100%; }
+    #main .gallery .text {
+      position: absolute;
+      top: 0%;
+      transform: translate(-50%, -50%);
+      line-height: 1;
+      font-size: 2rem;
+      font-weight: 500;
+      width: 100%;
+      left: 50%;
+      font-family: 'Alegreya', serif;
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: #fff;
+      letter-spacing: .4rem;
+      text-align: center;
+      z-index: 99; }
+      #main .gallery .text.text-bottom {
+        top: 100%; }
+
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 1.5rem;
+  width: 100%; }
+  @media only screen and (max-height: 630px) {
+    footer {
+      position: relative;
+      bottom: auto;
+      margin: 2rem 0; } }
+  footer .social {
+    margin-top: 1rem; }
+    footer .social a {
+      margin: 0 .2rem; }
+
+#logo {
+  width: 12rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem; }
+
+/*# sourceMappingURL=main.css.map */
